@@ -1,5 +1,8 @@
-﻿using MediatR;
+﻿using ExploForAll.Server.Interactors.AccountUseCase;
+using ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccount.User;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace ExploForAll.Server.Controllers.AccountControllers.Commands
 {
@@ -11,6 +14,19 @@ namespace ExploForAll.Server.Controllers.AccountControllers.Commands
         public CreateNewUserEndpoint(IMediator mediator)
         {
             _mediator = mediator;
+        }
+
+        public async Task<IActionResult> CreateNewUser([FromBody] CreateNewUserAccountRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Send to the use case
+            CreateNewAccountResponse response = await _mediator.Send(request);
+
+            return StatusCode((int)response.Status, response);
         }
     }
 }

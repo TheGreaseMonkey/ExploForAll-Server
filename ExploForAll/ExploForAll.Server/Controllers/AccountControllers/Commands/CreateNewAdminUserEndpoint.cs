@@ -21,7 +21,7 @@ namespace ExploForAll.Server.Controllers.AccountControllers.Commands
         [HttpPost]
         [Authorize(Roles = AccountTypes.Admin)]
         [Route("/account/admin")]
-        public async Task<IActionResult> CreateNewAdminUsert([FromBody] CreateNewAdminAccountRequest request)
+        public async Task<IActionResult> CreateNewAdminUser([FromBody] CreateNewAdminAccountRequest request)
         {
             if (!ModelState.IsValid)
             {
