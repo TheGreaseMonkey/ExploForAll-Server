@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "2hEpJk1Y03p+2Bq5gycQRPYq/WcXTgjRmcsWmFAv2Eg70V3PWqIVmB4Xmj5EYGCeg2FC9cZqmEzM2ECIa7Nt3g==",
+  "success": true,
+  "projectFilePath": "D:\\DEV\\_TheGreaseMonkey\\Explo4All\\ExploForAll-Server\\ExploForAll\\ExploForAll.Server\\ExploForAll.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mike\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
