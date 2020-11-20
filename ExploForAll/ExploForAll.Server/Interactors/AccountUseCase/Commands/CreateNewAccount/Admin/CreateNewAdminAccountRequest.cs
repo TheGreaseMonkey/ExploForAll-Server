@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System.ComponentModel.DataAnnotations;
 
-namespace ExploForAll.Server.Interactors.AccountUseCase.Commands
+namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.Admin
 {
     public class CreateNewAdminAccountRequest :IRequest<CreateNewAccountResponse>
     {

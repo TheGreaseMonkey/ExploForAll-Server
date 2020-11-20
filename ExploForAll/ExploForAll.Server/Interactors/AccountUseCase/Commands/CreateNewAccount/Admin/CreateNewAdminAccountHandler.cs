@@ -7,8 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using ExploForAll.Server.Interactors.AccountUseCase.Commands.Admin;
 
-namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccount
+namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccount.Admin
 {
     public class CreateNewAdminAccountHandler : IRequestHandler<CreateNewAdminAccountRequest, CreateNewAccountResponse>
     {
@@ -24,7 +25,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
         public async Task<CreateNewAccountResponse> Handle(CreateNewAdminAccountRequest request, CancellationToken cancellationToken)
         {
             // Try to fetch an user with this name
-            var userExists = _userManager.FindByNameAsync(request.Username);
+            var userExists = await _userManager.FindByNameAsync(request.Username);
 
             if(userExists != null)
             {
@@ -64,7 +65,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
             }
 
             // Send response
-            return new CreateNewAccountResponse(ResponseTypes.Success, $"Account for {request.Username} has been created");
+            return new CreateNewAccountResponse(ResponseTypes.Success, $"Admin account for {request.Username} has been created");
         }
     }
 }
