@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ExploForAll.Server.Interactors.AccountUseCase.CreateNewAccount
+namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccount
 {
     public class CreateNewAdminAccountHandler : IRequestHandler<CreateNewAdminAccountRequest, CreateNewAccountResponse>
     {

@@ -1,4 +1,5 @@
 ﻿using ExploForAll.Server.Interactors.AccountUseCase;
+using ExploForAll.Server.Interactors.AccountUseCase.Commands;
 using ExploForAll.Server.Models.Account;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
