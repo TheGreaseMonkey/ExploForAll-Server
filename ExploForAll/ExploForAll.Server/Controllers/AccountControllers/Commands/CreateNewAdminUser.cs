@@ -31,7 +31,7 @@ namespace ExploForAll.Server.Controllers.AccountControllers.Commands
             // Send to the use case
             CreateNewAccountResponse response = await _mediator.Send(request);
 
-            return Ok(response);
+            return StatusCode((int)response.Status, response);
         }
     }
 }

@@ -29,7 +29,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
             if(userExists != null)
             {
                 // There already is a user with this name
-                return new CreateNewAccountResponse(ResponseTypes.Failed, $"user with name: {request.Username} already exists");
+                return new CreateNewAccountResponse(ResponseTypes.BadRequest, $"user with name: {request.Username} already exists");
             }
 
             // User does not yet exist, create one
@@ -44,7 +44,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
 
             if (!result.Succeeded)
             {
-                return new CreateNewAccountResponse(ResponseTypes.Failed, "Error while trying to create new admin account");
+                return new CreateNewAccountResponse(ResponseTypes.InternalError, "Error while trying to create new admin account");
             }
 
             // Add roles to user

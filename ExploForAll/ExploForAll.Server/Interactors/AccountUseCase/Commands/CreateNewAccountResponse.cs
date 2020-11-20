@@ -9,7 +9,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase
 
         }
 
-        public CreateNewAccountResponse(string status, string message)
+        public CreateNewAccountResponse(ResponseTypes status, string message)
         {
             base.Message = message;
             base.Status = status;

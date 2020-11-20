@@ -1,8 +1,9 @@
 ﻿namespace ExploForAll.Server.Models
 {
-    public class ResponseTypes
+    public enum ResponseTypes
     {
-        public const string Failed = "Failed";
-        public const string Success = "Success";
+        Success = 200,
+        BadRequest = 400,
+        InternalError = 500
     }
 }
