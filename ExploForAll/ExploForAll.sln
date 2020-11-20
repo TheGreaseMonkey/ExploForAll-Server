@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploForAll.Domain", "Explo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploForAll.Application", "ExploForAll.Application\ExploForAll.Application.csproj", "{5F77AF22-1199-4891-8119-08F7BC66B95C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{BCAC2C8C-029E-4A22-8D71-7BFD76A34FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploForAll.Infra.EFCore", "ExploForAll.Infra.EFCore\ExploForAll.Infra.EFCore.csproj", "{550B1C9C-A107-453C-B366-6385A37EC5F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{5F77AF22-1199-4891-8119-08F7BC66B95C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F77AF22-1199-4891-8119-08F7BC66B95C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F77AF22-1199-4891-8119-08F7BC66B95C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{550B1C9C-A107-453C-B366-6385A37EC5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{550B1C9C-A107-453C-B366-6385A37EC5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{550B1C9C-A107-453C-B366-6385A37EC5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{550B1C9C-A107-453C-B366-6385A37EC5F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{550B1C9C-A107-453C-B366-6385A37EC5F1} = {BCAC2C8C-029E-4A22-8D71-7BFD76A34FC5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98485678-EBF3-4825-B55F-1AA2EB8E9F8C}
