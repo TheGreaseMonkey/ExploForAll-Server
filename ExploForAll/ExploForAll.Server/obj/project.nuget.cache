@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sUzS5YhL18rrld6SA+fVDdJ+JIoELCH1VgF1IvTY7P7u1dvwYZ/rGtWO9qKFvwCQP3uBHIXODUH7w4vYSmGknw==",
+  "dgSpecHash": "4gt4IXP6sKQ1fm4B/xNSF0KrVid/q48/M/ITSwYykPb+1v634ONICcngz11Yi9pzcG8U4nBiTvaKYSrbuzuVjQ==",
   "success": true,
   "projectFilePath": "D:\\DEV\\_TheGreaseMonkey\\Explo4All\\ExploForAll-Server\\ExploForAll\\ExploForAll.Server\\ExploForAll.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mike\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Mike\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Mike\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

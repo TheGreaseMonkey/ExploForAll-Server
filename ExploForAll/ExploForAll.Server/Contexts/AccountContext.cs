@@ -1,4 +1,4 @@
-﻿using ExploForAll.Server.Models;
+﻿using ExploForAll.Server.Models.Account;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
