@@ -47,6 +47,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.CreateNewAccount
                 return new CreateNewAccountResponse(ResponseTypes.Failed, "Error while trying to create new admin account");
             }
 
+            // Add roles to user
             var roleHelper = new AccountRoleHelper(_roleManager);
             await roleHelper.CreateRoleAsync(AccountTypes.Admin);
             await roleHelper.CreateRoleAsync(AccountTypes.User);
@@ -62,6 +63,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.CreateNewAccount
                 await _userManager.AddToRolesAsync(newAccount, roles);
             }
 
+            // Send response
             return new CreateNewAccountResponse(ResponseTypes.Success, $"Account for {request.Username} has been created");
         }
     }
