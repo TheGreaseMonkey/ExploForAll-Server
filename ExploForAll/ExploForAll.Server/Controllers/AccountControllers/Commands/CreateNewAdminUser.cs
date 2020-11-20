@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 namespace ExploForAll.Server.Controllers.AccountControllers.Commands
 {
     [ApiController]
-    public class CreateNewAdminUser : ControllerBase
+    public class CreateNewAdminUserEndpoint : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public CreateNewAdminUser(IMediator mediator)
+        public CreateNewAdminUserEndpoint(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -21,7 +21,7 @@ namespace ExploForAll.Server.Controllers.AccountControllers.Commands
         [HttpPost]
         [Authorize(Roles = AccountTypes.Admin)]
         [Route("/account/admin")]
-        public async Task<IActionResult> CreateNewAdminUserEndpoint([FromBody] CreateNewAdminAccountRequest request)
+        public async Task<IActionResult> CreateNewAdminUsert([FromBody] CreateNewAdminAccountRequest request)
         {
             if (!ModelState.IsValid)
             {
