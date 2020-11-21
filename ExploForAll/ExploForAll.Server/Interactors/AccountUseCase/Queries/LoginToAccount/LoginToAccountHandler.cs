@@ -17,13 +17,11 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Queries.LoginToAccount
     public class LoginToAccountHandler : IRequestHandler<LoginToAccountRequest, Response>
     {
         private readonly UserManager<Account> _userManager;
-        private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
 
-        public LoginToAccountHandler(UserManager<Account> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+        public LoginToAccountHandler(UserManager<Account> userManager, IConfiguration configuration)
         {
             _userManager = userManager;
-            _roleManager = roleManager;
             _configuration = configuration;
         }
 
