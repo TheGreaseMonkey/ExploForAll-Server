@@ -1,15 +1,12 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccount.User
 {
     public class CreateNewUserAccountRequest :IRequest<CreateNewAccountResponse>
     {
         [Required(ErrorMessage = "Username is required")]
+        [RegularExpression(@"^\S*$", ErrorMessage = "No white space allowed")]
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Alias is required")]

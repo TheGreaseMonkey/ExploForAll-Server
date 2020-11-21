@@ -6,6 +6,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.Admin
     public class CreateNewAdminAccountRequest :IRequest<CreateNewAccountResponse>
     {
         [Required(ErrorMessage = "Username is required")]
+        [RegularExpression(@"^\S*$", ErrorMessage = "No white space allowed")]
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Alias is required")]
