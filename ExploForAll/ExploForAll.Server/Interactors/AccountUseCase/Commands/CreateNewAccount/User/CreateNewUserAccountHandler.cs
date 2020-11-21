@@ -63,7 +63,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
             }
 
             // Send response
-            return new CreateNewAccountResponse(ResponseTypes.Success, $"Account for {request.Username} has been created");
+            return new CreateNewAccountResponse(ResponseTypes.Created, $"Account for {request.Username} has been created");
         }
     }
     

@@ -65,7 +65,7 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
             }
 
             // Send response
-            return new CreateNewAccountResponse(ResponseTypes.Success, $"Admin account for {request.Username} has been created");
+            return new CreateNewAccountResponse(ResponseTypes.Created, $"Admin account for {request.Username} has been created");
         }
     }
 }
