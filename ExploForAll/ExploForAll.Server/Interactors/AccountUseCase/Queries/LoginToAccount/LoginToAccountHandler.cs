@@ -49,10 +49,11 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Queries.LoginToAccount
                 var userRoles = await _userManager.GetRolesAsync(user);
 
                 var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
+                {
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim("uid", user.Id),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                };
 
                 // add claims for the roles
                 foreach (var role in userRoles)
