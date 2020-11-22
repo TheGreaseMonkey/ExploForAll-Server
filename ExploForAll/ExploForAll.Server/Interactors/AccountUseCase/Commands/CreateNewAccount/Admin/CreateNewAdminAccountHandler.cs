@@ -24,6 +24,9 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Commands.CreateNewAccoun
 
         public async Task<CreateNewAccountResponse> Handle(CreateNewAdminAccountRequest request, CancellationToken cancellationToken)
         {
+            // Change username to lowercase
+            request.Username = request.Username.ToLower();
+
             // Try to fetch an user with this name
             var userExists = await _userManager.FindByNameAsync(request.Username);
 

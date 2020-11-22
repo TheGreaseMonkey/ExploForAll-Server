@@ -29,6 +29,9 @@ namespace ExploForAll.Server.Interactors.AccountUseCase.Queries.LoginToAccount
         {
             try
             {
+                // Change username to lowercase
+                request.Username = request.Username.ToLower();
+
                 // Check if the user exists
                 var user = await _userManager.FindByNameAsync(request.Username);
                 if (user == null)
