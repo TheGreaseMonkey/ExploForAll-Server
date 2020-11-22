@@ -1,11 +1,7 @@
 ﻿using ExploForAll.Server.Interactors.AccountUseCase.Queries.LoginToAccount;
 using ExploForAll.Server.Models;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ExploForAll.Server.Controllers.AccountControllers.Queries
