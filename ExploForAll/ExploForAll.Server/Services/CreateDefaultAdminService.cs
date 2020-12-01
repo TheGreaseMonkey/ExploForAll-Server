@@ -11,10 +11,6 @@ namespace ExploForAll.Server.Services
     {
         private readonly IMediator _mediator;
 
-        public CreateDefaultAdminService()
-        {
-        }
-
         public CreateDefaultAdminService(IMediator mediator)
         {
             _mediator = mediator;

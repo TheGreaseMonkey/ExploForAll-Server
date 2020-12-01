@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4gt4IXP6sKQ1fm4B/xNSF0KrVid/q48/M/ITSwYykPb+1v634ONICcngz11Yi9pzcG8U4nBiTvaKYSrbuzuVjQ==",
+  "dgSpecHash": "IqIdpxBG6vSpr+iqPmrU5EZq/5SE2kHZG07/BoYEXdFcrfPPGNWqUvY6yFq0ElJQloTK0RGAmHxwTYJKp2XQVg==",
   "success": true,
   "projectFilePath": "D:\\DEV\\_TheGreaseMonkey\\Explo4All\\ExploForAll-Server\\ExploForAll\\ExploForAll.Server\\ExploForAll.Server.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.0\\microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
     "C:\\Users\\Mike\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",

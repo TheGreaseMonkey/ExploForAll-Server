@@ -66,3 +66,7 @@ D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Ser
 D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\obj\Debug\netcoreapp3.1\ExploForAll.Server.csproj.CopyComplete
+D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\bin\Debug\netcoreapp3.1\MediatR.dll
+D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\obj\Debug\netcoreapp3.1\ExploForAll.Server.csprojAssemblyReference.cache
+D:\DEV\_TheGreaseMonkey\Explo4All\ExploForAll-Server\ExploForAll\ExploForAll.Server\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
